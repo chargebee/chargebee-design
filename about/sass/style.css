@@ -1,0 +1,33 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.image-container__layer{
+	position: absolute;
+	height: 100%;
+}
+.image-container__layer-img{
+	height: 100%;
+}
+.layer1 {
+	height: 100%;		  
+	position: fixed;
+	width: 100%; 
+}
+.layer1 .image-container__layer-img {
+  width: 100%; }
+.image-container__layer .image-container__layer-img {
+  height: 100%; }
+
+.scrollable-container {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  /*-webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);*/
+  /*transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }*/
+}
+  .scrollable-container .scrollable-div {
+    width: 20000px;
+    height: 100%;
+    position: relative; }
