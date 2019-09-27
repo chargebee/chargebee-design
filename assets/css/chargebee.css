@@ -846,21 +846,31 @@ body{
 		font-size: var(--fs_base);
 	}
 }
-.cd-nav__link a:before {
+.cd-nav__link a:before,.cd-nav__link a:after {
     content: "";
-    position: absolute;
-    width: 0;
-    left: 0;
+	position: absolute;
     bottom: 0;
 	border-bottom: 2px solid;
 	transition: .4s ease-in-out;
+	width: 100%;
+}
+.cd-nav__link a:before{
+	left: 0;
+	width: 70%
+}
+.cd-nav__link a:after{
+	right: 0;
+	margin-bottom: -6px;
 }
 .cd-nav__link a:hover,.cd-nav__link a:focus{
 	text-decoration: none;
 	outline: none;
 }
-.cd-nav__link a:hover:before,.cd-nav__link a:focus:before{
+.cd-nav__link a:hover:before{
 	width: 100%;
+}
+.cd-nav__link a:hover:after{
+	width: 70%;
 }
 
 /* -----------------------------------------------------------------------------
