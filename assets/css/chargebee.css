@@ -830,7 +830,7 @@ body{
     color: #000005;
     font-family: var(--ff_base);
 	font-size: var(--fs_st);
-	font-weight: var(--fw_bold);
+	font-weight: var(--fw_medium);
 }
 @media only screen and (max-width: 767px) {
 	.cd-nav__container{
@@ -850,7 +850,7 @@ body{
     content: "";
 	position: absolute;
     bottom: 0;
-	border-bottom: 2px solid;
+	border-bottom: 1.5px solid;
 	transition: .4s ease-in-out;
 	width: 100%;
 }
