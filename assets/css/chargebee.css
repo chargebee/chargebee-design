@@ -312,9 +312,15 @@ body{
 .cd-bg__layer--six{
 	background-image: url(../images/banner/event-banner-medium.png);
 }
+.cd-bg__layer--seven{
+	background-image: url(../images/banner/strategic-elements.svg);
+}
 @media only screen and (min-width: 1441px) {
 	.cd-bg__layer--six{
 		background-image: url(../images/banner/event-banner-large.png);
+	}
+	.cd-bg__layer--seven{
+		background-image: url(../images/banner/strategic-elements.svg);
 	}
 }
 
