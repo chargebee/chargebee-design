@@ -1379,7 +1379,7 @@ body{
 	margin-bottom: 120px;
 	position: relative;
 	z-index: 1;
-	background-color: var(--color_white);
+	background-color: var(--color_black);
 }
 .cd-card .cd-card--bg {
     position: absolute;
@@ -1387,13 +1387,14 @@ body{
     right: 0;
     bottom: 0;
     top: 0;
-	background: #FFFFFF url(../images/banner/event-landing.png) no-repeat center center/cover;
+	background: #081434 url(../images/banner/strategic-elements.svg) no-repeat center center/cover;
 	border-radius: 12px;
 	z-index: -1;
-	opacity: .7;
+	opacity: .4;
 }
 .cd-card__title{
-	color: #000005;
+	/*color: #000005;*/
+	color: #fff;
 	font-family: var(--ff_primary);
 	font-size: 40px;
 	line-height: 47px;
@@ -1412,7 +1413,8 @@ body{
 	}
 }
 .cd-card__desc{
-	color: #000005;
+	/*color: #000005;*/
+	color: #fff
 	font-size: 18px;
 	line-height: 26px;
 	max-width: 600px;
@@ -1421,18 +1423,19 @@ body{
 .cd-card__action a{
 	display: inline-block;
 	padding: 12px 16px;
-	color: #00000A;
+	color: #FFB400;
 	font-size: 16px;
 	font-weight: var(--fw_medium);
 	line-height: 18px;
-	border: 1px solid #00000A;
+	/*border: 1px solid #00000A;*/
+	border: 1px solid #FFB400;
 	text-decoration: none;
 	transition: .2s ease-out;
 }
 .cd-card__action a:hover,
 .cd-card__action a:focus{
-	background: #00000A;
-	color: var(--color_white);
+	background: #FFB400;
+	color: #081434;
 }
 .cd-card__logo img{
 	margin: auto;
