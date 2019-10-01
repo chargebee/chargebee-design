@@ -1393,7 +1393,7 @@ body{
     right: 0;
     bottom: 0;
     top: 0;
-	background: #081434 url(../images/banner/strategic-elements.svg) no-repeat center center/cover;
+	background: #1e1e1e url(../images/banner/strategic-elements.svg) no-repeat center center/cover;
 	border-radius: 12px;
 	z-index: -1;
 	opacity: .4;
