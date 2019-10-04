@@ -1420,7 +1420,7 @@ body{
 }
 .cd-card__desc{
 	/*color: #000005;*/
-	color: #fff
+	color: #fff;
 	font-size: 18px;
 	line-height: 26px;
 	max-width: 600px;
