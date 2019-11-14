@@ -1581,10 +1581,11 @@ body{
 ----------------------------------------------------------------------------- */
 .cd-temp{
 	min-height: 100vh;
-	background-color: var(--bg_base);
 	display: flex;
 	justify-content: space-between;
 	flex-flow: column;
+	position: relative;
+	z-index: 2;
 }
 .cd-temp__body{
 	text-align: center;
@@ -1655,7 +1656,17 @@ body{
     margin: auto;
     border-radius: 0 0 100px 100px;
 }
-
+.cd-tbg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+	background: url(../images/banner/strategic-elements.svg) no-repeat center center/cover;
+	border-radius: 12px;
+	z-index: 1;
+	opacity: .4;
+}
 
 
 @media (min-width: 1440px){
@@ -1695,6 +1706,9 @@ body{
 	.cd-tbanner{
 		padding: 12px 24px;
 	    line-height: 18px;
+	}
+	.cd-tbg{
+		background: url(../images/banner/strategic-elements.svg) no-repeat right -200px bottom/cover;
 	}
 }
 
