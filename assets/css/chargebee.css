@@ -1580,7 +1580,7 @@ body{
 // Temp
 ----------------------------------------------------------------------------- */
 .cd-temp{
-	height: 100vh;
+	min-height: 100vh;
 	background-color: var(--bg_base);
 	display: flex;
 	justify-content: space-between;
@@ -1592,7 +1592,7 @@ body{
 .cd-temp__footer{
 	display: flex;
     justify-content: space-between;
-    max-width: 1300px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -1651,14 +1651,52 @@ body{
     text-align: center;
     color: #000006;
     font-weight: 500;
-    max-width: 1300px;
+    max-width: 960px;
     margin: auto;
     border-radius: 0 0 100px 100px;
 }
 
 
 
-
+@media (min-width: 1440px){
+	.cd-tbanner,
+	.cd-temp__footer{
+		max-width: 1300px;
+	}
+}
+@media (max-width: 991px){
+	.cd-tbanner{
+	    border-radius: 0 ;
+	}
+	.cd-temp__title{
+	    font-size: 48px;
+	    line-height: 60px;
+	}
+}
+@media (max-width: 767px){
+	.cd-temp__header{
+		order: 3;
+	}
+	.cd-temp__body{
+	    order: 2;
+	}
+	.cd-temp__footer{
+		order: 1;
+	}
+	.cd-temp__title{
+	    font-size: 36px;
+	    line-height: 44px;
+	}
+	.cd-temp__desc {
+	    font-size: 16px;
+	    line-height: 24px;
+	    max-width: 360px;
+	}
+	.cd-tbanner{
+		padding: 12px 24px;
+	    line-height: 18px;
+	}
+}
 
 
 
