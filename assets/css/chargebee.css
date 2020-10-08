@@ -1712,9 +1712,15 @@ body{
 	}
 }
 
-
-
-
+a.blog {
+    padding-left: 20px;
+}
+.cd-nav__link a:before {
+    display: none;
+}
+.cd-nav__link a:after{
+	display: none;
+}
 
 
 
