@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body x-data="designApp()">
+  <!--head-->
+  <div class="bg-cbDark h-full relative">
+    <div class="   h-screen ">
+      <div class="md:flex p-10 md:p-0 m-auto justify-end  h-3/4 items-center">
+
+        <div class="md:w-3/12 md:pl-0 py-6 pt-0 md:pt-0 ">
+         
+         <div class="flex justify-between items-center" data-aos="fade-up" >
+          <div class="flex justify-start items-center ">
+            <div
+              class="flex  items-center h-18 w-16 bg-gradient-to-r from-yellow-500 via-red-500 to-purple-500 p-2 rounded-full shadow-xl mr-4">
+              <img src="./images/chargebee-icon-white.svg" />
+            </div>
+            <div class="text-xl text-cbGray-400">
+              Chargebee<br>Design
+            </div>
+         
+          </div>
+
+          <svg x-on:click="menuToggle" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cbGray-400 md:hidden cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+         </div>
+         
+       
+
+          <div class="text-5xl font-bold md:w-9/12 py-12 " data-aos="fade-up" data-aos-delay="500"> 
+            <span class="text-cbGray-400">We're on a quest to</span>
+            <span class="text-white">humanize subscription journeys.</span>
+          </div>
+
+          <div class="text-xl text-cbGray-300 font-light md:w-7/12 " data-aos="fade-up" data-aos-delay="700">
+            And yes, we're looking for fellow explorers.
+          </div>
+
+        </div>
+
+        <div class="md:w-7/12  md:h-full h-1/3 relative  md:block hidden ">
+          <div style="background: url(./images/Vector.svg) no-repeat right top; background-size: cover; "
+            class="h-full"></div>
+          <!-- <svg class="h-auto object-cover" viewBox="0 250 831 912" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1569 735.461C1569 326.525 1217.76 -5 784.5 -5C351.242 -5 1.01544e-05 326.525 1.01544e-05 735.461C-0.00427555 760.742 1.34804 786.006 4.05195 811.158H1564.95C1567.65 786.006 1569 760.742 1569 735.461Z" fill="#FF6B00"/>
+                </svg> -->
+          <!-- <div class=""><img src="./images/Vector.svg" class=" object-cover w-full " alt=""></div> -->
+          <div class=" absolute md:right-1/3 right-1/4  -bottom-36  md:-bottom-1/4 z-50 "><img src="./images/man-shadow.svg" alt=""></div>
+        </div>
+
+        
+
+      </div>
+      <!-- mansilloute -->
+      <div class="w-full overflow-hidden   md:h-1/4 ">
+
+        <div class="md:h-1/3 md:block hidden">
+          <div class=" md:-mr-80 -mr-96 md:-mt-4 "><img src="./images/orange-shadow.png" class=" w-full " alt=""></div>
+
+        </div>
+        <div class="h-2/6 ">
+          <div class="text-sm font-light text-cbGray-200 text-center">We craft tailored experiences for humans.</div>
+          <div class=" w-4   h-2/5 border-r-2 m-auto border-gray-700 mt-4"></div>
+        </div>
+
+        <!-- nav-->
+        <div class=" pt-6 md:static absolute top-0  md:bg-cbDark bg-cbGray-400   w-full  md:block" :class="{ 'md:bg-black md:h-auto md:fixed md:opacity-80 md:z-50 md:shadow-lg ' : !atTop, 'hidden' : !menu }" @scroll.window="headerScroll()">
+          <div class=" w-9/12  m-auto flex ">
+            <nav class="
+            flex flex-wrap
+            items-baseline
+            
+            justify-between
+            w-full
+            py-4
+            md:py-0
+            px-4
+            text-lg text-cbGray-100
+            
+            
+          
+          ">
+
+              <div class="  w-full md:flex md:items-center md:w-full " id="menu">
+                <ul class="
+              
+                pt-4
+                
+                text-sm text-cbGray-100
+                font-light
+                md:flex
+                md:pt-0 
+              md:justify-around
+                md:w-full
+                ">
+                  <li>
+                    <a class="md:p-4  py-2 block hover:text-purple-400 uppercase " :class="{ 'font-semibold' : !atTop}" href="#">In a Nutshell</a>
+                  </li>
+                  <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400 uppercase" :class="{ 'font-semibold' : !atTop}" href="#">design org</a>
+                  </li>
+                  <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400 uppercase" :class="{ 'font-semibold' : !atTop}" href="#">vision&Mission</a>
+                  </li>
+                  <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400 uppercase" :class="{ 'font-semibold' : !atTop}" href="#">CURRENTLY HIRING</a>
+                  </li>
+                  <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400  uppercase" :class="{ 'font-semibold' : !atTop}" href="#">FAQS</a>
+                  </li>
+                  <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400  uppercase" :class="{ 'font-semibold' : !atTop}" href="#">WHy work with us?</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <svg @click="menuToggle" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cbGray-200 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!--section 1-->
+  <div class="bg-white">
+    <div class="md:w-9/12  md:flex m-auto md:py-24 py-16 md:flex-grow items-end">
+      <div class="md:w-5/12  " data-aos = "fade-up-right">
+        <div class="md:flex   md:block hidden">
+          <img src="./images/shooting-dot.png" alt="">
+        </div>
+      </div>
+      <div class="md:w-7/12  px-4 md:px-0">
+        <div class="md:w-6/12 md:pb-2.5 pb-6">
+          <h2 class="text-cbGray-300 text-base uppercase font-light">In a Nutshell</h2>
+          <div class="font-bold text-cbDark text-2xl pt-6 pb-2.5 ">What drives Chargebee?</div>
+          <p>We take the friction out of subscription billing and revenue management, so our customers can focus on
+            growth and beyond.</p>
+        </div>
+
+        <div class="md:w-10/12 ">
+          <div class="grid md:grid-cols-2 text-center md:text-left">
+            <div class="pb-12">
+              <p class="rating-text">4.6/5</p>
+              <p class="rating-sub__text">G2 Customer Rating</p>
+              <p>Customer confidence 101</p>
+            </div>
+
+            <div class="pb-12">
+              <p class="rating-text">4.7/5</p>
+              <p class="rating-sub__text"> Employer Rating</p>
+              <p>on Glassdoor by happy employees</p>
+            </div>
+            <div class="pb-12">
+              <p class="rating-text">18000+</p>
+              <p class="rating-sub__text">Customers</p>
+              <p>across 6 continents.</p>
+            </div>
+            <div class="pb-12">
+              <p class="rating-text">$1.3B+</p>
+              <p class="rating-sub__text">Valuation</p>
+              <p>from 6 rounds of funding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--section 2-->
+  <div class="md:py-8">
+    <div class="flex justify-around md:pb-32 pb-16">
+      <div class="tab-header ">Product Design</div>
+      <div class="tab-header  ">Communication Design</div>
+    </div>
+
+    <div class="md:flex w-8/12 m-auto gap-40 justify-end">
+
+      <div class="md:w-7/12  flex justify-end">
+        <div class="md:w-3/12"></div>
+        <h4 class="md:w-8/12 text-cbDark md:text-4xl text-2xl  font-bold ">We learn, ideate, and prototype to deliver digital
+          experiences that are meaningful and delightful to our customers.</h4>
+
+      </div>
+      <div class="md:w-4/12 md:pt-0 pt-6">
+        <p>UX Researchers</p>
+        <p>UX Designers </p>
+        <p>Service Designers</p>
+        <p>Content Strategists</p>
+        <p>Content WritersUI</p>
+        <p>Designers </p>
+        <p>Design Technologists </p>
+
+        <div class="text-3xl text-cbOrange font-bold">#one-team</div>
+      </div>
+    </div>
+
+
+    <div class="md:flex md:w-8/12 m-auto gap-40 md:px-0 px-16 justify-end pt-32">
+
+      <div class="md:w-7/12  md:flex justify-start">
+        <div class="md:w-7/12">
+          <div class="text-base text-cbDark font-semibold pb-4">What’s special about the Product Design team at
+            Chargebee?</div>
+          <h4 class=" text-cbDark text-4xl  font-bold pb-4">Everyday, we untangle design problems so businesses can
+            manage subscriptions better. </h4>
+          <div class="text-3xl text-cbOrange font-bold">And we have fun while we're at it.</div>
+
+        </div>
+
+      </div>
+      <div class="md:w-4/12 md:pt-0 pt-16">
+        <div class="pb-16">
+          <div class="product-sub__heading ">Room to Grow</div>
+          <p>We find joy in learning and sharing with our tribe. Beyond design, research, and a sizeable learning
+            budget, we grow by exchanging perspectives and respecting our quirks.</p>
+        </div>
+
+        <div class="pb-16">
+          <div class="product-sub__heading ">Bracing for Scale</div>
+          <p>Experimenting with processes helps us build efficiency and prepare for the challenges of scale. From our
+            nascent design system to our onboarding process. Every day is a new challenge.</p>
+        </div>
+
+        <div class="pb-16">
+          <div class="product-sub__heading ">We listen to Customers</div>
+          <p>Support tickets, research calls, and beyond. We're always finding ways to understand and respond to what
+            customers expect from Chargebee.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!--section 3-->
+  <div class="bg-cbDark relative overflow-hidden">
+    <div class="text-right  w-full ">
+      <div class="md:flex md:justify-end" data-aos = "fade-down">
+        <img src="./images/sphere.png" class=" ml-0 " alt="">
+      </div>
+    </div>
+    <div class="md:flex  w-8/12 pt-20 pb-32  m-auto  justify-between">
+      <!--banner-content-->
+      <div class="md:w-4/12  md:pt-52 relative ">
+        <div class="md:absolute md:top-24  -left-32 md:visible md:block hidden" data-aos = "fade-up-right">
+          <img src="./images/shooting-dot-gray.png" alt="">
+        </div>
+        <div class="sphere-section__heading">
+          Where we are at
+        </div>
+        <p class="pt-4">Our team today is in the process of transformation. Bringing in new ways of thinking and doing,
+          while collaborating across the organization.<br><br>
+          We're excited about the problems we're solving, but know that we could use all the help that we can get to
+          deliver more value to our growing customer community.</p>
+      </div>
+
+      <div class="md:w-4/12 pt-16 md:pt-0">
+        <div class="sphere-section__heading w-10/12">
+          Where we are headed
+        </div>
+        <p class="pt-4 md:w-10/12">Where we find ourselves today is not where we want to be tomorrow. We want to be masters
+          at tackling the right problems and processes to design the craft of the future.<br><br>
+          To offer value to the business and customers as unconventional yet trusted advisors in unpredictable
+          times.<br><br>
+          And that's where you come in. Join us as we work, play, and learn to solve the problems of tomorrow.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--section 4-->
+  <div class="">
+    <div class="w-8/12  md:flex m-auto md:py-24 md:justify-between ">
+      <div class="md:w-4/12 pt-32 relative">
+        <p class="text-cbDark font-medium text-base pb-3">The roles we are hiring for</p>
+        <h4 class="text-cbDark text-4xl md:w-11/12 font-bold">While we're always looking to speak to designers enthusiastic
+          about the work we do, here are the roles we're looking to get on board at present.</h4>
+        <div class=" absolute -left-52 bottom-0 md:block hidden" data-aos = "fade-up-right">
+          <img src="./images/dot-group.svg" class="w-auto" alt="">
+        </div>
+      </div>
+      <div class="md:w-6/12">
+        <!-- ux-reasearch -->
+        <div class="card ">
+          <div class="md:w-8/12">
+            <div class=" card-title ">UX Researcher</div>
+            <p>While we're always looking to speak to designers enthusiastic about the work we do, here are.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <!-- ux-reasearch -->
+        <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Product Designer</div>
+            <p>While we're always looking to speak to designers enthusiastic about.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+
+        <!-- ux-reasearch -->
+        <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Content Strategists</div>
+            <p>While we're always looking to speak to designers enthusiastic.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <!-- ux-reasearch -->
+        <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Design Technologists</div>
+            <p>While we're always looking to speak to designers enthusiastic about the work we do.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <!-- ux-reasearch -->
+        <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Design Technologists</div>
+            <p>While we're always looking to speak to designers enthusiastic about the work we do.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--section 5-->
+  <div class=" bg-cbDark py-16 md:py-40 ">
+    <div class="  m-auto px-12 md:px-0">
+      <!--banner-content-->
+            <div class="md:flex md:justify-end  md:w-full">
+              <div class="md:w-2/12"></div>
+
+        <div class=" w-full md:relative m-auto ">
+          <p class="text-5xl text-cbGray-150 font-bold md:w-5/12 md:pr-10 leading-snug md:absolute md:top-0 ">How do I know that I
+            will be a good fit?</p>
+
+          <div class="md:py-16 py-8 md:flex items-center justify-between ">
+
+            <div class="md:justify-self-end  md:relative ">
+
+              <p class="text-5xl text-cbGray-150 font-bold  md:pr-10 leading-snug ">You</p>
+
+            </div>
+            <div class="w-full md:block hidden">
+              <img src="./images/lines.png" class="w-full " alt="">
+
+            </div>
+
+          </div>
+
+          <div class="md:flex md:gap-32 md:absolute bottom-0">
+            <div>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Get involved in decision making.</p>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Embrace change.</p>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Think in systems.</p>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Enjoy a laugh.</p>
+            </div>
+
+            <div>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Are empathetic.</p>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Are curious.</p>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Are happy to help.</p>
+              <p class="text-2xl font-normal text-gray-300 pb-6">Are a translator and interpreter.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <!--section 6-->
+  <div class="">
+    <div class="w-10/12   m-auto py-24">
+      <div class="text-center">
+        <h4 class="font-bold text-4xl text-cbGray-400">Who else is on this quest today?</h4>
+        <div class="text-2xl font-semibold pt-4 text-cbGray-300">With our powers combined, we can do great things
+          together.</div>
+      </div>
+      <div class="pt-12 md:pt-24 md:w-10/12 md:grid md:grid-cols-2 m-auto gap-16 ">
+        <div class=" p-8 shadow-md mb-8">
+          <p>“Work at Chargebee has been challen`ging and equally rewarding in the time I have spent here. I constantly
+            get to be inspired by my talented team and also learn and improve my skills.”</p>
+          <div class="flex  pt-4 gap-4 items-center">
+            <img src="https://via.placeholder.com/80" class="rounded-full" alt="">
+            <div>
+              <p class="font-semibold text-xl">Ankith Kumar</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class=" p-8 shadow-md mb-8">
+          <p>“Work at Chargebee has been challen`ging and equally rewarding in the time I have spent here. I constantly
+            get to be inspired by my talented team and also learn and improve my skills.”</p>
+          <div class="flex pt-4 gap-4 items-center">
+            <img src="https://via.placeholder.com/80" class="rounded-full" alt="">
+            <div>
+              <p class="font-semibold text-xl">Ankith Kumar</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class=" p-8 shadow-md mb-8">
+          <p>“Work at Chargebee has been challen`ging and equally rewarding in the time I have spent here. I constantly
+            get to be inspired by my talented team and also learn and improve my skills.”</p>
+          <div class="flex pt-4 gap-4 items-center">
+            <img src="https://via.placeholder.com/80" class="rounded-full" alt="">
+            <div>
+              <p class="font-semibold text-xl">Ankith Kumar</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class=" p-8 shadow-md mb-8">
+          <p>“Work at Chargebee has been challen`ging and equally rewarding in the time I have spent here. I constantly
+            get to be inspired by my talented team and also learn and improve my skills.”</p>
+          <div class="flex pt-4 gap-4 items-center">
+            <img src="https://via.placeholder.com/80" class="rounded-full" alt="">
+            <div>
+              <p class="font-semibold text-xl">Ankith Kumar</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-gray-100 pt-16 md:pt-24">
+    <div class="md:w-7/12 w-9/12 md:flex m-auto justify-between items-center ">
+      <div class="md:w-1/3">
+        <h4 class="text-4xl font-semibold pb-4">We embrace your uniqueness.</h4>
+        <h5 class="font-normal text-2xl text-cbGray-300">Even if you don’t tick all the , we would like to see you
+          apply.</h5>
+      </div>
+      <div class="md:flex justify-center gap-12 md:pt-0 pt-6">
+        <div>
+          <button class=" bg-white shadow-md px-12 py-4 text-2xl font-medium rounded w-full md:w-auto">Join Us</button>
+        </div>
+        <div class="md:pt-0 pt-6">
+          <button class=" bg-cbOrange text-white shadow-md md:px-24 py-4 text-2xl font-medium rounded w-full md:w-auto">Get in
+            Touch</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-sm pt-24 pb-8">© 2021 Chargebee.</p>
+  </footer>
+
+  <script>
+
+  </script>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

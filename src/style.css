@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply px-4 py-2 bg-blue-600 text-white rounded;
+  }
+
+  .card {
+      @apply md:flex md:p-8 p-4  mb-8 transition ease-out duration-700 transform 
+  }
+
+  .card:hover {
+      @apply text-cbGray-400 shadow-2xl translate-y-2 
+  }
+  .card a{
+      @apply text-base text-cbGray-300 font-normal
+  }
+  
+
+  .card:hover a, .card a:hover{
+    @apply text-cbPurple-100
+  }
+
+  .card-title {
+      @apply text-2xl font-bold text-cbGray-400 pb-3
+  }
+
+  .tab-header{
+      @apply transition ease-out duration-700 transform text-xl px-6 md:px-0  md:text-2xl font-bold text-cbDark hover:text-cbGray-400  md:w-2/4 text-center hover:bg-gray-50 py-6 cursor-pointer bg-gradient-to-tl hover:from-gray-50 hover:to-white border-t border-gray-50 hover:shadow-inner
+  }
+
+  html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+p{
+    @apply text-base text-cbGray-300 font-light
+    
+}
+
+.rating-text{
+    @apply text-cbOrange text-2xl font-bold
+    
+}
+
+.rating-sub__text{
+    @apply text-cbGray-400 text-base font-semibold  
+ 
+}
+
+.sphere-section__heading{
+    @apply text-cbGray-150 text-4xl font-bold
+}
+
+.product-sub__heading{
+    @apply text-2xl text-cbDark font-bold pb-3
+}
+
