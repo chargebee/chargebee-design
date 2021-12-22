@@ -1,576 +1,841 @@
-<!doctype html>
-<html>
-<!-- ===========================================================================
-Start: Head
-============================================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="google-site-verification" content="F53LIq9XK0wpbOxoXVy_etqAoHNIuhvC2S8wt46cwcE">
-    <title>Chargebee Design Team | A continual search for people-shaped stories</title>
-    <meta name="description" content="Chargebee Design team's journey to unearth business problems, find clarity, frame questions, fill gaps and positively transform how we build, work and live. Join us. Do good work.">
-    <meta name="theme-color" content="#000006">
-    <!-- -----------------------------------------------------------------------
-    Start: Og
-    ------------------------------------------------------------------------ -->
-    <meta property="og:url" content="https://www.chargebee.design/">
-    <meta property="og:title" content="Chargebee Design Team | A continual search for people-shaped stories">
-    <meta property="og:description" content="Chargebee Design team's journey to unearth business problems, find clarity, frame questions, fill gaps and positively transform how we build, work and live. Join us. Do good work.">
-    <meta property="og:image" content="https://www.chargebee.design/assets/images/og/cb-design.png">
-    <meta property="og:site_name" content="Chargebee Design">
-    <meta property="og:type" content="website">
-    <!-- -----------------------------------------------------------------------
-    End: Og
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Twitter
-    ------------------------------------------------------------------------ -->
-    <meta name="twitter:url" content="https://www.chargebee.design/">
-    <meta name="twitter:title" content="Chargebee Design Team | A continual search for people-shaped stories">
-    <meta name="twitter:description" content="Chargebee Design team's journey to unearth business problems, find clarity, frame questions, fill gaps and positively transform how we build, work and live. Join us. Do good work.">
-    <meta name="twitter:account_id" content="1054943053138534400">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@chargebeedesign">
-    <meta name="twitter:creator" content="@chargebeedesign">
-    <meta name="twitter:image:src" content="https://www.chargebee.design/assets/images/og/cb-design.png">
-    <meta name="twitter:domain" content="https://www.chargebee.design">
-    <!-- -----------------------------------------------------------------------
-    End: Twitter
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Favicon & touch icon
-    ------------------------------------------------------------------------ -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
-    <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon.png">
-    <link rel="canonical" href="https://www.chargebee.design/">
-    <!-- -----------------------------------------------------------------------
-    End: Favicon & touch icon
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Css 
-    ------------------------------------------------------------------------ -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/rzy8emx.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/chargebee.css"/>
-    <!-- -----------------------------------------------------------------------
-    End: Css
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Other meta
-    ------------------------------------------------------------------------ -->
-    <meta name="msvalidate.01" content="2BDFBE565908FC3899BBA4BD498C57C2" />
-    <!-- -----------------------------------------------------------------------
-    End: Other meta
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Page level CSS
-    ------------------------------------------------------------------------ -->
-    <style type="text/css">
-        .affix {top: 60px;}
-        .affix-bottom {position: absolute;}
-        .cd-panel{margin-top: 40px;}
-        .cd-card{
-            margin-top: 40px;
-        }
-        @media only screen and (min-width: 768px) {
-            .cd-panel{margin-top: 100px;}
-            .cd-card{
-                margin-top: 90px;
-            }
-        }
-    </style>
-    <!-- -----------------------------------------------------------------------
-    End: Page level CSS
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Page level Script
-    ------------------------------------------------------------------------ -->
-    <script type="text/javascript"></script>
-    <!-- -----------------------------------------------------------------------
-    End: Page level Script
-    ------------------------------------------------------------------------ -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chargebee Design Team | A search for people-shaped stories</title>
+  <meta name="description" content="One team's quest to unearth human problems, find clarity, frame questions, and transform how we work and grow. Join us. Do good work.">
+  <meta name="theme-color" content="#000006">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
-<!-- ===========================================================================
-End: Head
-============================================================================ -->
-<!-- ===========================================================================
-Start: Body
-============================================================================ -->
-<body>
-<!-- ---------------------------------------------------------------------------
-Start: Header
----------------------------------------------------------------------------- -->
-<header class="l-header">
 
-    <!-- <div class="l-header__band">
-        Want to be a part of Chargebee Design? We’re currently hiring at NID, Gandhinagar. Walk in or scroll down to apply.
-    </div> -->
-    <!-- -----------------------------------------------------------------------
-    Start: Header Content
-    ------------------------------------------------------------------------ -->
-    <div class="l-header__container">
-        <nav class="cd-nav cd-nav--grid">
-            <div class="cd-logo cd-logo--light">
-                <!-- <img src="assets/images/cb-design-logo.svg" alt="Chargebee Design" class="img-responsive"> -->
-                <img src="https://www.chargebee.com/static/resources/brand/chargebee-logo-white.svg" alt="Chargebee Logo" class="img-responsive" width="120">
-            </div>
-            <div class="cd-nav__link">
-                <a href="events/">Events</a>
-            </div>
-        </nav>
+<body x-data="designApp()">
+  <!--head-->
+  <div class="bg-cbDark md:h-full relative overflow-x-hidden overflow-hidden ">
+    <div class="   md:h-screen ">
+      <div class="md:flex p-10 md:p-0 m-auto justify-end  h-5/6 items-center ">
 
-        <div class="cd-hero animate fadeInUp">
-            <p class="cd-hero__desc" style="max-width: 360px;">
-                One small team’s journey to unearth business problems, find clarity, frame questions, fill gaps and positively transform how we build, work and live our lives.
-            </p>
-            <h1 class="cd-hero__title animate fadeInUp" style="animation-delay: .3s">
-                Design is the continual search for people-shaped stories.
-            </h1>
+        <div class="md:w-3/12   md:pl-0 py-6 pt-0 md:pt-0  relative z-40">
+         
+         <div class="flex justify-between items-center" data-aos="fade-up" >
+          <div class="flex justify-start items-center ">
+            <div
+              class="flex  items-center h-18 w-16 bg-gradient-to-r from-yellow-500 via-red-500 to-purple-500 p-2 rounded-full shadow-xl mr-4">
+              <img src="./images/chargebee-icon-white.svg" />
+            </div>
+            <div class="text-xl text-cbGray-400">
+              Chargebee<br>Design
+            </div>
+         
+          </div>
+          
+          <!-- <svg x-show="!menu"  x-on:click="menuToggle" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cbGray-400 md:hidden cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+          <svg x-show="menu" @click.away="menuToggle"  @click="menuToggle" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cbGray-200 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg> -->
+         </div>
+         
+       
+
+          <div class="text-5xl font-bold md:w-9/12 py-12 " data-aos="fade-up" data-aos-delay="500"> 
+            <span class="text-cbGray-400">We're on a quest to</span>
+            <span class="text-white">humanize subscription journeys.</span>
+          </div>
+
+          <div class="text-xl text-white md:text-cbGray-300 font-light md:w-7/12 w-2/3 relative z-50 md:z-0" data-aos="fade-up" data-aos-delay="700">
+            And yes, we're looking for fellow explorers.
+          </div>
+
         </div>
-    </div>
-    <!-- -----------------------------------------------------------------------
-    End: Header Content
-    ------------------------------------------------------------------------ -->
-    <!-- -----------------------------------------------------------------------
-    Start: Header Background
-    ------------------------------------------------------------------------ -->
-    <div class="cd-bg hidden-xs hidden-sm">
-        <div class="cd-bg__layer cd-bg__layer--one rellax" data-rellax-speed="-10"></div>
-        <div class="cd-bg__layer cd-bg__layer--two rellax" data-rellax-speed="-10"></div>
-        <div class="cd-bg__layer cd-bg__layer--twoa rellax" data-rellax-speed="-5"></div>
-        <div class="cd-bg__layer cd-bg__layer--three rellax" data-rellax-speed="-2"></div>
-        <div class="cd-bg__layer cd-bg__layer--four rellax" data-rellax-speed="2"></div>
-        <div class="cd-bg__layer cd-bg__layer--five rellax" data-rellax-speed="5" ></div>
-    </div>
 
-    <div class="cd-bg-sm visible-xs visible-sm">
-        <img src="assets/images/banner/bg-mobile.png" alt="" class="img-responsive">
-    </div>
-    <!-- -----------------------------------------------------------------------
-    End: Header Background
-    ------------------------------------------------------------------------ -->
-</header>
-<!-- ---------------------------------------------------------------------------
-End: Header
----------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------
-Start: Main
----------------------------------------------------------------------------- -->
-<main class="l-main">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                <!-- -----------------------------------------------------------
-                Start: Article
-                ------------------------------------------------------------ -->
-                <div class="cd-article" style="padding-top: 0; margin-bottom: 30px;">
-                    <p class="cd-article__desc">
-                        Day by day, over weeks, months and years, we realized that what we did every day as a design team had slowly changed.
-                    </p>
-                    <p class="cd-article__desc">
-                        It was both intentional and unconscious. Intentional in the ways we said ‘yes’ and ‘no’, in the ways we chose to think about problems. But unconscious and organic in the way it changed us as people. We began to develop a philosophy. We started advocating design to others. We built a design practice in a way that other teams naturally started having conversations with us about the problems they were facing.
-                    </p>
-                    <p class="cd-article__desc revealOnScroll" data-animate="fadeInUp">
-                        All of this has led us to share some of the principles we operate by. We believe that when design is seen as more than just aesthetics or function, more than just the sum of its parts, it can change everything. Not in mere moments, in a big, mushroom cloud of disruption, but in a gradual, unwavering march towards progress.
-                    </p>
-                </div>
-                <!-- -----------------------------------------------------------
-                End: Article
-                ------------------------------------------------------------ -->
-            </div>
+        <div class="md:w-7/12  md:h-full h-1/2 md:relative  md:block   absolute z-auto  w-full md:top-0 md:-right-0 bottom-36 ">
+          <div style="background: url(./images/Vector.svg) no-repeat right top; background-size: cover; "
+            class="h-full"></div>
+          <!-- <svg class="h-auto object-cover" viewBox="0 250 831 912" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1569 735.461C1569 326.525 1217.76 -5 784.5 -5C351.242 -5 1.01544e-05 326.525 1.01544e-05 735.461C-0.00427555 760.742 1.34804 786.006 4.05195 811.158H1564.95C1567.65 786.006 1569 760.742 1569 735.461Z" fill="#FF6B00"/>
+                </svg> -->
+          <!-- <div class=""><img src="./images/Vector.svg" class=" object-cover w-full " alt=""></div> -->
+          <div class=" absolute md:right-1/3 right-1/4  -bottom-36  md:-bottom-1/5 z-30 "><img src="./images/man-shadow.svg" alt=""></div>
         </div>
-        <!-- -------------------------------------------------------------------
-        Start: Affix
-        -------------------------------------------------------------------- -->
-        <!-- -------------------------------------------------------------------
-        Start: Affix Before div. Dont delete
-        -------------------------------------------------------------------- -->
-        <div id='before-affix'></div><!-- leave this empty -->
-        <!-- -------------------------------------------------------------------
-        End: Affix Before div. Dont delete
-        -------------------------------------------------------------------- -->
-        <div class="row">
-            <!-- ---------------------------------------------------------------
-            Start: Affix Nav
-            ---------------------------------------------------------------- -->
-            <div class="col-sm-2 col-md-3">
-                <div data-affix-after='#before-affix' id="cd-affix" class="hidden-xs hidden-sm">
-                    <div class="cd-affix__container">
-                        <ul class="cd-affix__list nav">
-                            <li class="cd-affix__item">
-                                <a href="#philosophy">
-                                    Philosophy
-                                </a>
-                            </li>
-                            <li class="cd-affix__item">
-                                <a href="#practice">
-                                    Practice
-                                </a>
-                            </li>
-                            <li class="cd-affix__item">
-                                <a href="#people">
-                                    People
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- ---------------------------------------------------------------
-            End: Affix Nav
-            ---------------------------------------------------------------- -->
-            <div class="col-sm-8 col-md-6">
-                <!-- -----------------------------------------------------------
-                Start: Article
-                ------------------------------------------------------------ -->
-                <div class="cd-article cd-affix__content" id="philosophy">
-                    <h2 class="cd-article__heading">
-                        Design is an extension of business.
-                    </h2>
-                    <div class="cd-article__figure">
-                        <img src="assets/images/cb-desgin.gif" alt="" class="img-responsive">
-                    </div>
-                    <p class="cd-article__desc">
-                        All organizational problems are design problems. From framing problems to planning approaches and articulating solutions, designers have a direct influence on business. We believe designers need a seat at the table when founders and leaders talk business.
-                    </p>
-                    <p class="cd-article__desc">
-                        Because when we employ design principles and problem solving frameworks in business discussions, they begin and end with people - a critical and much-needed shift. We bring value to the organization by consciously viewing problems from the lens of those who need them solved the most.
-                    </p>
 
-                    <div class="cd-blockquote cd-blockquote--alt revealOnScroll" data-animate="fadeInLeft">
-                        <div class="cd-blockquote__content">
-                            Product and Design are one, just like Yin and Yang.
-                        </div>
-                        <div class="cd-blockquote__author">
-                            Rajaraman, COO Chargebee
-                        </div>
-                    </div>
-                </div>
-                <!-- -----------------------------------------------------------
-                End: Article
-                ------------------------------------------------------------ -->
+        
 
-                <!-- -----------------------------------------------------------
-                Start: Article
-                ------------------------------------------------------------ -->
-                <div class="cd-article" id="practice">
-                    <h2 class="cd-article__heading">
-                        Then we realized, everything is design.
-                    </h2>
-                    <p class="cd-article__desc">
-                        Our practice is ever changing and poses a constant design problem. While we solve bigger organizational challenges, how do we design our own processes to be as effective as possible or hire diverse talent for our team, taking advantage of what inspires, motivates and stresses us?
-                    </p>
-                    <p class="cd-article__desc">
-                        As a discipline, we research and reflect every day on how our structures and processes can be better designed. No two squads have the same process. If people need processes to work efficiently, we understand that they also need to participate actively in designing these processes for their own context.
-                    </p>
+      </div>
+      <!-- mansilloute -->
+      <div class="w-full overflow-hidden   md:h-1/6  ">
 
-                    <div class="cd-blockquote revealOnScroll" data-animate="fadeInLeft">
-                        <div class="cd-blockquote__content">
-                            We see people we work with and our design team itself as ‘users’.
-                        </div>
-                    </div>
-                </div>
-                <!-- -----------------------------------------------------------
-                End: Article
-                ------------------------------------------------------------ -->
+        <div class="md:h-1/3 md:block hidden">
+          <div class=" md:-mr-80 -mr-96 md:-mt-4 "><img src="./images/orange-shadow.png" class=" w-full " alt=""></div>
 
-                <!-- -----------------------------------------------------------
-                Start: Article
-                ------------------------------------------------------------ -->
-                <div class="cd-article" id="people">
-                    <h2 class="cd-article__heading">
-                        We design stories. We design through stories.
-                    </h2>
-                    <p class="cd-article__desc">
-                        As observers of human nature, our team is always looking for intent, purpose, connections and emotion. We work iteratively, articulating and telling ourselves stories in order to prototype and build, and then learning from this process to communicate our stories better.
-                    </p>
-                    <p class="cd-article__desc">
-                        Our test for designing intangible experiences is to observe how transparent the design is and the effect of the emotional statement it makes. 
-                    </p>
-
-                    <div class="cd-blockquote revealOnScroll" data-animate="fadeInLeft">
-                        <div class="cd-blockquote__content">
-                            We simply get out of the way of what people want to do.
-                        </div>
-                    </div>
-
-                </div>
-                <!-- -----------------------------------------------------------
-                End: Article
-                ------------------------------------------------------------ -->
-            </div>
         </div>
-        <!-- -------------------------------------------------------------------
-        End: Affix
-        -------------------------------------------------------------------- -->
-        <div id="cb-affix-footer">
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <div class="cb-article__img" style="margin-top: 120px;">
-                        <img src="assets/images/team/team-design.png" alt="Chargebee Design Team" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-1">
-                    <div class="cd-panel">
-                        <div class="cd-panel__figure">
-                            <img src="assets/images/team/thumb/praveen.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="cd-panel__content">
-                            <div class="cd-panel__title">
-                                <a href="https://www.chargebee.design/off-work/designer-by-day-tinkerer-by-night/">Designer by day, tinkerer by night</a>
-                            </div>
-                            <div class="cd-panel__action">
-                                <a href="https://www.chargebee.design/off-work/designer-by-day-tinkerer-by-night/">Read his interview </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 col-sm-offset-2">
-                    <div class="cd-panel">
-                        <div class="cd-panel__figure">
-                            <img src="assets/images/team/thumb/rajaraman.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="cd-panel__content">
-                            <div class="cd-panel__title">
-                                <a href="https://www.chargebee.design/design-dialogue/tete-a-tete-with-rajaraman/">A tete-a-tete with Rajaraman, co-founder, Chargebee</a>
-                            </div>
-                            <div class="cd-panel__action">
-                                <a href="https://www.chargebee.design/design-dialogue/tete-a-tete-with-rajaraman/">Read his interview </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center" style="margin-top: 120px;">
-                    <img src="assets/images/design-talk/strategic-elements.svg" style="margin: auto;margin-top: 90px;" width="280" alt="Chargebee Design" class="img-responsive cd-hero__logo hidden-xs hidden-sm">
-                    <h1 class="cd-hero__title animate fadeInUp" style="animation-delay: .3s">
-                            Elevating Design as <br class="hidden-xs">a Business Practice
-                    </h1>
-                    <p class="cd-hero__desc">
-                        When small teams come together with a design-led vision, It can create<br class="visible-lg"> lasting business impact, and new ways of working together.
-                    </p>
-                    <div class="cd-hero__action">
-                        <a href="events/elevating-design-business-practice/">Learn more &rarr;</a>
-                    </div>
-                </div>
-            </div>
+        <div class="h-1/4  md:block hidden md:pt-10">
+          <div class=" text-lg md:w-full  font-light text-cbGray-200 text-center pl-10 md:pl-0">We craft experiences tailored for humans.</div>
+          <!-- <div class=" w-4   h-2/5 border-r-2 m-auto border-gray-700 mt-4"></div> -->
         </div>
+
+        <!-- nav-->
+        <!-- <div x-cloak class=" md:pt-6 pt-0 md:static  md:top-0 md:right-0 absolute top-24 right-10 z-40   md:bg-cbDark bg-cbGray-500 rounded md:rounded-none md:w-full  w-2/3  md:block" :class="{ 'md:bg-black md:h-auto md:fixed md:opacity-80 md:z-50 md:shadow-lg ' : !atTop, 'hidden' : !menu }" @scroll.window="headerScroll()">
+          <div class=" w-9/12  m-auto flex ">
+            <nav class="
+            flex flex-wrap
+            items-baseline
+            
+            justify-between
+            w-full
+            py-4
+            md:py-0
+            px-4
+            text-lg text-cbGray-100
+            
+            
+          
+          ">
+
+              <div class="  w-full md:flex md:items-center md:w-full " id="menu">
+                <ul class="
+              
+                pt-4
+                
+                text-sm text-cbGray-100
+                font-light
+                md:flex
+                md:pt-0 
+              md:justify-around
+                md:w-full
+                ">
+                <template x-for="menuList in menuLists" :key="menuList.name">
+                  <li>
+                    <a class="md:p-4  py-2 block hover:text-cbOrange uppercase " @click="menuClick(event)" :class="{ 'font-semibold' : !atTop}" :href="menuList.href" x-text="menuList.name"></a>
+                  </li>
+                </template>
+                 
+             
+                </ul>
+              </div>
+            </nav>
+           
+          </div>
+        </div> -->
+      </div>
+
+
     </div>
-</main>
-<!-- ---------------------------------------------------------------------------
-End: Main
----------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------
-Start: Footer
----------------------------------------------------------------------------- -->
-<footer class="l-footer">
-    <div class="l-footer__container">
-        <!-- -------------------------------------------------------------------
-        Start: Footer Content
-        -------------------------------------------------------------------- -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-2">
-                    <div class="cd-article cd-article--footer" data-foot-animate="true" style="padding-top: 0">
-                        <h3 class="cd-article__title">
-                            A flexible platform<br class="visible-md visible-lg"> to do your best work
-                        </h3>
-                        <p class="cd-article__desc">
-                            Like all good teams, we are never complete and we never stop learning. Apply here to join us, own a problem and solve it with help from experienced design team members. We’re eager to see what we can teach each other and do together!
-                        </p>
-                        <div class="cd-article__actions">
-                            <div class="cd-article__action">
-                                <a href="https://www.chargebee.com/careers/jobs/" target="_blank" class="cd-btn cd-btn--suffix">
-                                    Join us. Do good work
-                                    <span class="cd-btn__suffix"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
+
+
+
+  <!--section 1-->
+  <div class="bg-white px-4" id="nutshell">
+    <div class="md:w-9/12  md:flex m-auto md:pt-24 py-16 md:flex-grow items-end">
+      <div class="md:w-5/12  " data-aos = "fade-up-right">
+        <div class="md:flex   md:block hidden">
+          <img src="./images/shooting-dot.png" alt="">
         </div>
-        <!-- -------------------------------------------------------------------
-        End: Footer Content
-        -------------------------------------------------------------------- -->
-        <!-- -------------------------------------------------------------------
-        Start: Footer Nav
-        -------------------------------------------------------------------- -->
-        <nav class="cd-nav" data-foot-animate="true">
-            <div class="cd-nav__container">
-                <div class="cd-logo--alt">
-                    <a href="https://www.chargebee.com/" target="_blank">Chargebee</a> delivers exceptional subscription experiences
-                </div>
+      </div>
+      <div class="md:w-7/12  px-4 md:px-0">
+        <div class="md:w-6/12 md:pb-2.5 pb-6">
+          <h2 class="text-cbGray-300 text-base uppercase font-light">In a Nutshell</h2>
+          <div class="font-bold text-cbDark text-2xl pt-6 pb-2.5 ">What drives Chargebee?</div>
+          <p>We take the friction out of subscription billing and revenue management, so our customers can focus on
+            growth and beyond.</p>
+        </div>
 
-                <div class="cd-links">
-                    <a href="https://dribbble.com/chargebee" target="_blank" class="cd-link cd-link--dribbble"></a>
-                    <a href="https://www.instagram.com/chargebee/" target="_blank" class="cd-link cd-link--insta"></a>
-                    <a href="https://twitter.com/chargebee" target="_blank" class="cd-link cd-link--twt"></a>
-                </div>
+        <div class="md:w-10/12 md:pt-12">
+          <div class="grid md:grid-cols-2 text-left md:text-left">
+            <div class="pb-12">
+              <p class="rating-text">4.6/5</p>
+              <p class="rating-sub__text">G2 Customer Rating</p>
+              <p>Customer confidence 101</p>
             </div>
-        </nav>
-        <!-- -------------------------------------------------------------------
-        End: Footer Nav
-        -------------------------------------------------------------------- -->
+
+            <div class="pb-12">
+              <p class="rating-text">4.7/5</p>
+              <p class="rating-sub__text"> Employer Rating</p>
+              <p>on Glassdoor by happy employees</p>
+            </div>
+            <div class="pb-12">
+              <p class="rating-text">18000+</p>
+              <p class="rating-sub__text">Customers</p>
+              <p>across 6 continents.</p>
+            </div>
+            <div class="pb-12">
+              <p class="rating-text">$1.3B+</p>
+              <p class="rating-sub__text">Valuation</p>
+              <p>from 6 rounds of funding</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+  </div>
 
-
-
-<!-- ---------------------------------------------------------------------------
-End: Footer
----------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------
-Start: Loading
----------------------------------------------------------------------------- -->
-<div class="cd-loader" data-loader="true">
-    <div class="cd-loader__bg"></div>
-    <div class="cd-loader__text animate fadeInUp">
-        Chargebee <span class="animate fadeInUp">Design</span>
+  <!--section 2-->
+  <div class="bg-gray-50 md:py-24 py-8 px-8">
+    <div class="md:w-4/12 m-auto text-left md:text-center">
+    <div class="text-cbDark md:text-4xl text-2xl  font-bold">Design @ Chargebee.<br>
+      Two teams. One shared goal</div>
+      <p class="md:w-9/12 m-auto py-6">Our product and communication design teams come together to humanize technology 
+        every day. </p>
+        <p>Go ahead, meet the teams</p>
     </div>
+  </div>
+
+  <div class="" id="design">
+    <div class="flex justify-around ">
+      <div @click="productToggle"  
+      class="md:text-center text-left px-4 md:px-0"
+      :class="designTab ? 'bg-cbOrange  md:w-2/4   py-6 rounded-tr-xl text-white' : 'bg-gray-200 md:w-2/4  shadow-inner py-6 rounded-tr-xl'">
+        <div class="md:text-2xl text-sm font-bold"  :class="designTab ? 'text-white ' : 'text-cbGray-400'">Product Design</div>
+        <div class="flex md:justify-center">
+          <p class="md:text-base text-xs font-extralight " :class="designTab ? 'text-gray-100' : 'text-cbGray-400'">Driving the Chargebee Experience</p>
+          <svg :class="designTab ? 'block': 'hidden'" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-300 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+          </svg>
+        </div>
+      </div>
+      <div @click="commToggle" class="md:text-center text-left px-4 md:px-0" :class="commTab ? 'md:w-2/4  py-6 rounded-tl-xl bg-cbDark ' : 'bg-gray-200 md:w-2/4  shadow-inner py-6 rounded-tl-xl'">
+        <div class="md:text-2xl text-sm font-bold" :class="commTab ?'text-white' :' text-cbGray-300'" >Communication Design</div>
+        <div class="flex md:justify-center  ">
+          <p :class="commTab? 'text-gray-50' : 'text-cbGray-400'" class="md:text-base text-xs font-extralight ">Champions of the Chargebee Brand</p>
+          <svg :class="commTab ? 'block': 'hidden'" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+<!--start of product design-->
+
+<div x-show="designTab" class="md:pt-8 pt-10 ">
+
+<!-- <div class="md:flex md:w-8/12 px-8 md:px-0 m-auto gap-40 justify-end">
+
+  <div class="md:w-7/12  flex items-start">
+   
+    <h4 class="md:w-9/12 text-cbDark md:text-4xl text-2xl  font-bold ">We learn, ideate, and prototype to deliver meaningful digital
+      experiences to our customers.</h4>
+
+  </div>
+  <div class="md:w-4/12 md:pt-0 pt-6">
+    <p>UX Researchers</p>
+    <p>UX Designers </p>
+    <p>Service Designers</p>
+    <p>Content Strategists</p>
+    <p>Content Writers</p>
+    <p>UI Designers </p>
+    <p>Design Technologists </p>
+
+    <div class="text-3xl text-cbOrange font-bold">#one-team</div>
+  </div>
+</div> -->
+
+
+<div class="md:flex md:w-8/12 m-auto gap-40 md:px-0  justify-end md:pt-32 pt-16 px-8">
+
+  <div class="md:w-7/12  md:flex justify-start">
+    <div class="md:w-7/12">
+      <div class="text-base text-cbDark font-semibold pb-4">What’s special about the Product Design team at
+        Chargebee?</div>
+      <h4 class=" text-cbDark text-4xl  font-bold pb-4">Everyday, we untangle design problems so businesses can
+        manage subscriptions better. </h4>
+      <div class="text-4xl text-cbOrange font-bold">And we have fun while we're at it.</div>
+
+    </div>
+
+  </div>
+  <div class="md:w-4/12 md:pt-0 pt-16 md:pb-20">
+    <div class="pb-16">
+      <div class="product-sub__heading ">Room to Grow</div>
+      <p>We find joy in learning and sharing with our tribe. Beyond design, research, and a sizeable learning
+        budget, we grow by exchanging perspectives and respecting our quirks.</p>
+    </div>
+
+    <div class="pb-16">
+      <div class="product-sub__heading ">Bracing for Scale</div>
+      <p>Experimenting with processes helps us build efficiency and prepare for the challenges of scale. From our
+        nascent design system to our onboarding process: every day is a new challenge.</p>
+    </div>
+
+    <div class="pb-16">
+      <div class="product-sub__heading ">We listen to Customers</div>
+      <p>Support tickets, research calls, and beyond. We're always finding ways to understand and respond to what
+        customers expect from Chargebee.</p>
+    </div>
+
+
+
+  </div>
 </div>
-<!-- ---------------------------------------------------------------------------
-End: Loading
----------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------
-Start: External Script
----------------------------------------------------------------------------- -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/rellax.min.js"></script>
-<!-- ---------------------------------------------------------------------------
-End: External Script
----------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------
-Start: Internal Script
----------------------------------------------------------------------------- -->
-<script type="text/javascript">
-    // -------------------------------------------------------------------------
-    // Rellax js for Animation
-    // -------------------------------------------------------------------------
-    var rellax = new Rellax('.rellax');
 
-    $(document).ready(function(){
-        //For animation on scroll
-        var $window           = $(window),
-            win_height_padded = $window.height() * 1.1;
-        function revealOnScroll() {
-            var scrolled = $window.scrollTop(),
-                win_height_padded = $window.height() * 1.1;
-            // Showed...
-            $(".revealOnScroll:not(.animate)").each(function () {
-              var $this     = $(this),
-                  offsetTop = $this.offset().top;
-              if (scrolled + win_height_padded > offsetTop) {
-                $this.addClass('animate ' + $this.attr('data-animate'));
-              }
-            });
-          }
-          $window.on('scroll', revealOnScroll);
-    });
 
+  <!--section 3-->
+  <div class="bg-cbDark relative overflow-hidden"  id="vision-mission">
+    <div class="text-right  w-full ">
+      <div class="md:flex md:justify-end" data-aos = "fade-down">
+        <img src="./images/sphere.png" class=" ml-0 " alt="">
+      </div>
+    </div>
+    <div class="md:flex  md:w-8/12 pt-20 pb-32 px-8 md:px-0 m-auto  justify-between">
+      <!--banner-content-->
+      <div class="md:w-4/12  relative md:-mt-20">
+        
+        <div class="sphere-section__heading">
+          Where we are at
+        </div>
+        <p class="pt-4">Our team is transforming. We value new ways of thinking and doing while we collaborate across the organization.<br><br>
+          We're excited about the problems we're solving, but know that we could use all the help that we can get to
+          deliver more value to our growing customer community.</p>
+      </div>
+
+      <div class="md:w-4/12 pt-16 md:pt-12 relative">
+        <div class="md:absolute md:-top-24  -left-32 md:visible md:block hidden" data-aos = "fade-up-right">
+          <img src="./images/shooting-dot-gray.png" alt="">
+        </div>
+        
+        <div class="sphere-section__heading w-10/12">
+          Where we are headed
+        </div>
+        <p class="pt-4 md:w-10/12">Where we find ourselves today is not where we want to be tomorrow. We’re focused on tackling the right problems and processes to design the craft of the future.<br><br>
+          On proving to be unconventional yet trusted advisors in unpredictable times.<br><br>
+          And that's where you come in. Join us as we work, play, and learn to solve the problems of tomorrow.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--section 4-->
+  <div class="md:pt-24" >
+    <div class="md:w-8/12  md:flex m-auto md:py-24 md:justify-between md:px-0 px-8 md:pt-0 pt-16" id="hiring">
+      <div class="md:w-4/12 md:pt-10 relative">
+        <p class="text-cbDark font-medium text-base pb-3">Roles we want to bring on board</p>
+        <h4 class="text-cbDark text-4xl md:w-11/12 font-bold relative z-10">While we're always looking to speak to designers enthusiastic
+          about the work we do, here are the roles we're looking to get on board at present.</h4>
+        <div class=" absolute -left-80  -bottom-44 md:block hidden" data-aos = "fade-up-right">
+          <img src="./images/dot-group.svg" class="w-auto" alt="">
+        </div>
+      </div>
+      <div class="md:w-6/12 md:pt-0 pt-10">
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class=" card-title ">UX Researcher</div>
+            <p>Help inform our product design process with a deeper understanding of what customers need.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
+
+        <!-- ux-reasearch -->
+       
+
+        <a href="https://careers.chargebee.com/jobs/NCdqui4vCDRG/product-designer-any-location-in-india" target="_blank">
+        <div class="card">
+          
+          <div class="flex w-full  justify-between">
+            <div>
+              <div class="card-title ">Product Designer <br> (Europe - Remote-friendly)</div>
+              <p class="md:w-3/4">Craft and refine product experiences across the Chargebee App.</p></p>
+            </div>
+            <div >
+              <svg xmlns="http://www.w3.org/2000/svg" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <a href="https://careers.chargebee.com/jobs/NCdqui4vCDRG/product-designer-any-location-in-india" target="_blank">
+          <div class="card">
+            
+            <div class="flex w-full  justify-between">
+              <div>
+                <div class="card-title ">Product Designer <br> (India - Remote-friendly)</div>
+                <p class="md:w-3/4">Craft and refine product experiences across the Chargebee App.</p></p>
+              </div>
+              <div >
+                <svg xmlns="http://www.w3.org/2000/svg" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          </a>
+
+          <a href="https://careers.chargebee.com/jobs/H2OUTYxN0Ck-/senior-product-designer-any-where-in-india-remote-work" target="_blank">
+            <div class="card">
+              
+              <div class="flex w-full  justify-between">
+                <div>
+                  <div class="card-title ">Senior Product Designer <br> (India - Remote-friendly)</div>
+                  <p class="md:w-3/4">Get involved in product developement ideation, research and execution.</p>
+                </div>
+                <div >
+                  <svg xmlns="http://www.w3.org/2000/svg" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            </a>
+
+
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Content Strategists</div>
+            <p>Help define the customer's path and create clarity using research and writing.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
+
+        <!-- ux-reasearch -->
+     
+
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Design Technologists</div>
+            <p>Bring focus to the integrity of code and the quality of product look and feel.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <!--section 5-->
+  <div class=" bg-cbDark py-16 md:py-40 " id="faqs">
+    <div class="  m-auto px-12 md:px-0">
+      <!--banner-content-->
+            <div class="md:flex md:justify-end  md:w-full">
+              <div class="md:w-2/12"></div>
+
+        <div class=" w-full md:relative m-auto ">
+          <p class="md:text-5xl text-3xl text-cbGray-150 font-bold md:w-5/12 md:pr-10 leading-snug md:absolute md:top-24 ">How do I know that I
+            will be a good fit?</p>
+
+          <div class="md:py-16 py-8 md:flex items-center justify-between ">
+
+            <div class="md:justify-self-end  md:relative ">
+
+              <p class="md:text-5xl text-3xl text-cbGray-150 font-bold  md:pr-10 leading-snug ">You</p>
+
+            </div>
+            <div class="w-full md:block hidden">
+              <img src="./images/lines.png" class="w-full " alt="">
+
+            </div>
+
+          </div>
+
+          <div class="flex md:gap-32 md:absolute bottom-0 ">
+            <div>
+              <p class="text-base md:text-2xl font-normal text-gray-300 pb-6">Get involved in decision making.</p>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Embrace change.</p>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Think in systems.</p>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Enjoy a laugh.</p>
+            </div>
+
+            <div>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Are empathetic.</p>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Are curious.</p>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Are happy to help.</p>
+              <p class="text-base md:text-2xl text-gray-300 pb-6">Are a translator and interpreter.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+</div>
+
+<!--end of product design-->
+
+
+<!--start of communication-->
+<div x-show="commTab" >
+  <div  class="md:pt-24 pt-10 bg-cbDark">
+  <div class="md:flex md:w-8/12 m-auto gap-40 justify-end px-8 md:px-0">
+
+    <div class="md:w-7/12  flex justify-start">
+      <h4 class="md:w-8/12 text-white md:text-4xl text-2xl  font-bold ">We start conversations, build relationships and translate visions into visuals</h4>
+  
+    </div>
+    <div class="md:w-4/12 md:pt-0 pt-6">
+      <p>Graphic and Visual Designers, </p>
+        <p>Illustrators,</p> <p>Animators, </p><p>Storytellers,</p> <p> Brand Specialists,</p> <p>Design Technologists. </p>
+  
+      <div class="text-3xl text-cbOrange font-bold">#one-team</div>
+    </div>
+  </div>
+
+
+  <div class="md:flex md:w-8/12 m-auto gap-40 md:px-0 px-8 justify-end md:pt-32 pt-16 ">
+
+    <div class="md:w-7/12  md:flex justify-start">
+      <div class="md:w-12/12 ">
+        <div class="md:w-2/3">
+          <div class="text-base text-cbGray-300 font-semibold pb-4">What’s special about the Communication Design team at Chargebee?</div>
+        <h4 class=" text-white text-5xl  font-bold pb-4">Championing the Chargebee Brand.</h4>
+        <div class="text-base text-cbGray-300">We work across the organization with revenue driven and people-focused teams.</div>
+        </div>
+        <div class="md:pt-20">
+          <img src="./images/pyramid.png" alt="">
+        </div>
+      </div>
+  
+    </div>
+    <div class="md:w-4/12 md:pt-0 pt-16">
+      <div class="pb-16">
+        <div class="communication-sub__heading text-white ">We're storytellers at heart</div>
+        <p>Launching an ad campaign? Need a fresh landing page? Onboarding a new employee? Looking for an explainer video? No stress, we've got you covered.</p>
+      </div>
+  
+      <div class="pb-16">
+        <div class="communication-sub__heading ">Lean mean lead machine</div>
+        <p>One of our prime directives is to create content that reaches customers who need our services the most. We design for different channels and outcomes</p>
+      </div>
+  
+      <div class="pb-16">
+        <div class="communication-sub__heading ">Our clients love us</div>
+        <p>From conception of a campaign, event, or idea, we collaborate with project owners to not just execute but also elevate their vision</p>
+      </div>
+
+      <div class="pb-16">
+        <div class="communication-sub__heading">We're a mixed bag</div>
+        <p>Graphic designers, illustrators, motion-graphic creators, developers, thinkers, dreamers - we bring diverse skills to our work together.</p>
+      </div>
+  
+  
+  
+    </div>
+  </div>
+</div>
+
+<!--approach-->
+  <div class="md:w-8/12 m-auto ">
+    <div class="md:flex md:w-12/12 m-auto gap-40 md:px-0 px-8 justify-end md:pt-32 pt-16">
+
+      <div class="md:w-7/12  md:flex justify-start">
+        <div class="md:w-7/12">
+          <div class="text-2xl text-cbGray-300 font-light  pb-4">Our Approach</div>
+          <h4 class=" text-cbDark text-4xl  font-bold pb-4">The projects we deliver are defined by our work sessions. </h4>
+          <div class="text-2xl text-cbGray-300 font-bold">We love to brainstorm, ideate, question, sketch, jam, and visualize together.</div>
     
+        </div>
+    
+      </div>
+      <div class="md:w-4/12 md:pt-0 pt-16">
+        <div class="pb-16">
+          <div class="text-3xl  font-bold pb-3 text-purple-500">24/7</div>
+          <div class="text-black">Journey Driven</div>
+          <p>Visual jamming helps us unravel and address unique customer journeys.</p>
+        </div>
+    
+        <div class="pb-16">
+          <div class="text-3xl  font-bold pb-3 text-purple-500">99.9%</div>
+          <div class="text-black">Story Telling</div>
+          <p>Behind every spectacular design solution is a captivating story.</p>
+        </div>
+    
+        <div class="pb-16">
+          <div class="text-3xl  font-bold pb-3 text-purple-500">100K+</div>
+          <div class="text-black">Sketches</div>
+          <p>We noodle around with doodles, rapid prototypes, and everything in between</p>
+        </div>
+    
+    
+    
+      </div>
+    </div>
+  </div>
 
-     // -------------------------------------------------------------------------
-    // For Loader
-    // -------------------------------------------------------------------------
-    $(window).load(function(){
-        $("[data-loader]").addClass("cd-loader--hide")
-    });
+  <div class="bg-black ">
+    <div class="md:flex justify-end">
+      <div class="md:w-2/3 md:flex items-center justify-end md:order-1 order-2 px-8 md:px-0 py-16 md:py-0">
+        <div class=" md:w-2/3 ">
+          <div class="text-white text-3xl font-bold">Check out our work</div>
+          <p class="pt-3 pb-8 md:w-2/4  text-cbGray-100">Capturing our creations and our moments of inspiration</p>
+           <a href="#" class="bg-white px-8 py-4 text-base font-semibold rounded">See our dribbble</a>
+        </div>
+      </div>
+      <div class="md:w-2/4 md:pt-12 md:flex  justify-end md:order-2 order-1">
+        <img src="./images/dribble_.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- roles -->
+  <div class="" >
+    <div class="md:w-8/12 px-8 md:px-0  md:flex m-auto md:py-24 md:justify-between " id="hiring">
+      <div class="md:w-4/12 md:pt-10 pt-16 relative">
+        <p class="text-cbDark font-medium text-base pb-3">Roles we want to bring on board</p>
+        <h4 class="text-cbDark text-4xl md:w-11/12 font-bold">Ready to deliver stellar design experiences? Check our open roles.</h4>
+        <div class=" absolute -left-52 -bottom-52 md:block hidden" data-aos = "fade-up-right">
+          <img src="./images/dot-group.svg" class="w-auto" alt="">
+        </div>
+      </div>
+      <div class="md:w-6/12  md:px-0  pt-16 md:pt-0 ">
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class=" card-title ">Visual Designer</div>
+            <p>While we're always looking to speak to designers enthusiastic about the work we do, here are.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
+
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Senior Graphic Designer</div>
+            <p>While we're always looking to speak to designers enthusiastic about.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
+
+        <a href="https://careers.chargebee.com/jobs/NfwKHaEsUOy9/senior-frontend-developer-marketing-team" target="_blank">
+          <div class="card">
+            
+            <div class="flex w-full  justify-between">
+              <div>
+                <div class="card-title ">Senior Front End Dev </div>
+                <p class="md:w-3/4">While we're always looking to speak to designers enthusiastic about the work we do.</p>
+              </div>
+              <div >
+                <svg xmlns="http://www.w3.org/2000/svg" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          </a>
 
 
-    // -------------------------------------------------------------------------
-    // For Animation in footer
-    // -------------------------------------------------------------------------
-    // $('#cd-affix').on( 'affix-bottom.bs.affix', function () {
-    //     $('[data-foot-animate]').addClass("animate fadeInUp");
-    // } );
-
-    // -------------------------------------------------------------------------
-    // Scrollspy for left nav
-    // -------------------------------------------------------------------------
-    $('body').scrollspy({ target: '#cd-affix'});
-
-    $("#cd-affix li a[href^='#']").on('click', function(e) {
-       // prevent default anchor click behavior
-       e.preventDefault();
-
-       // store hash
-       var hash = this.hash;
-
-       // animate
-       $('html, body').animate({
-           scrollTop: $(this.hash).offset().top
-         }, 1000, function(){
-
-           // when done, add hash to url
-           // (default click behaviour)
-           window.location.hash = hash;
-         });
-    });
+        <a href="https://careers.chargebee.com/jobs/x4HUicOIpcuL/visual-designer" target="_blank">
+          <div class="card">
+            
+            <div class="flex w-full  justify-between">
+              <div>
+                <div class="card-title ">Visual Designer </div>
+                <p class="md:w-3/4">While we're always looking to speak to designers enthusiastic about the work we do, here are.</p>
+              </div>
+              <div >
+                <svg xmlns="http://www.w3.org/2000/svg" class=" h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          </a>
 
 
-    // -------------------------------------------------------------------------
-    // Affix scroll
-    // -------------------------------------------------------------------------
-    $('[data-affix-after]').each( function() {
-        var elem = $(this);
-        var parent_panel = elem.parent();
-        var prev = $( elem.data('affix-after') );
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Content Strategists</div>
+            <p>While we're always looking to speak to designers enthusiastic.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
 
-        if( prev.length != 1 ) {
-        /* Create a new element immediately before. */
-        prev = elem.before( '<div></div>' ).prev();
-        }
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Motion Graphic Artists</div>
+            <p>While we're always looking to speak to designers enthusiastic about the work we do.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
 
-        var resizeFn = function() {
-          /* Set the width to it's natural width in the parent. */
-          var sideBarNavWidth = parent_panel.width()
-              - parseInt(elem.css('paddingLeft'))
-              - parseInt(elem.css('paddingRight'))
-              - parseInt(elem.css('marginLeft'))
-              - parseInt(elem.css('marginRight'))
-              - parseInt(elem.css('borderLeftWidth'))
-              - parseInt(elem.css('borderRightWidth'));
-          elem.css('width', sideBarNavWidth);
+        <!-- ux-reasearch -->
+        <!-- <div class="card ">
+          <div class="md:w-8/12">
+            <div class="card-title">Mid Level Frond End Developer</div>
+            <p>While we're always looking to speak to designers enthusiastic about the work we do.</p>
+          </div>
+          <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+            <a href="#">Learn More</a>
+          </div>
+        </div> -->
 
-          elem.affix({
-            offset: {
-                top: prev.offset().top + prev.outerHeight(true) - 60,
-                bottom: function () {
-                    return (this.bottom = $('#cb-affix-footer').outerHeight(true) + 150)
-                }
-            }
-          });
-        };
+          <!-- ux-reasearch -->
+          <!-- <div class="card ">
+            <div class="md:w-8/12">
+              <div class="card-title">Senior Front End Developer</div>
+              <p>While we're always looking to speak to designers enthusiastic about the work we do.</p>
+            </div>
+            <div class="md:self-end md:w-4/12 md:text-right pt-4 md:pt-0">
+              <a href="https://careers.chargebee.com/jobs/4q6eK44fOR9k/senior-front-end-developer-marketing">Learn More</a>
+            </div>
+          </div> -->
 
-        resizeFn();
-            $(window).resize(resizeFn);
-    });
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27953252-10"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      </div>
+    </div>
+  </div>
 
-  gtag('config', 'UA-27953252-10');
-</script>
+  <!-- onboard -->
+  <div class="bg-gradient-to-t from-white to-gray-200 py-16">
+    <div class="md:w-8/12 m-auto px-8 md:px-0">
+      <div class="md:flex">
+        <div class="md:w-2/4">
+          <div class="text-4xl font-semibold md:w-2/4">Who would we want onboard?</div>
+        </div>
+        <div class="md:w-2/4 pt-16 md:pt-0">
+          <div class="grid   md:grid-cols-2 gap-12">
+            <div>
+              <div class="text-2xl font-semibold pb-3">Strong Collaborators</div>
+              <p>Happy to help the team, share knowledge and learnings so they can win, and not afraid to ask for help? You're a fit!</p>
+            </div>
+            <div>
+              <div class="text-2xl font-semibold pb-3">Creative Spirits</div>
+              <p>Happy to help the team, share knowledge and learnings so they can win, and not afraid to ask for help? You're a fit!</p>
+            </div>
+            <div>
+              <div class="text-2xl font-semibold pb-3">Hobbies to Flex</div>
+              <p>We value individuals with strong passions and creative pursuits outside the domain of their core work.</p>
+            </div>
+            <div>
+              <div class="text-2xl font-semibold pb-3">Strong Collaborators</div>
+              <p>Happy to help the team, share knowledge and learnings so they can win, and not afraid to ask for help? You're a fit!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- ---------------------------------------------------------------------------
-End: Internal Script
----------------------------------------------------------------------------- -->
-<!-- ===========================================================================
-End: Body
-============================================================================ -->
+</div>
+<!--end of communication-->
+
+  <!--section 6-->
+  <div class="" id="work-with-us">
+    <div class="md:w-10/12 px-8 md:px-0   m-auto md:py-24 py-16">
+      <div class="md:text-center">
+        <h4 class="font-bold text-4xl text-black ">Who else is on this quest today?</h4>
+        <div class="text-2xl font-semibold pt-4 text-cbGray-300">With our powers combined, we can do great things
+          together.</div>
+      </div>
+      <div class="pt-12 md:pt-24 md:w-10/12 md:grid md:grid-cols-3 m-auto gap-10 owl-carousel">
+        <!-- <div class=" p-8 shadow-md mb-8">
+          <p>“Work at Chargebee has been challen`ging and equally rewarding in the time I have spent here. I constantly
+            get to be inspired by my talented team and also learn and improve my skills.”</p>
+          <div class="flex  pt-4 gap-4 items-center">
+            <img src="https://via.placeholder.com/80" class="rounded-full" alt="">
+            <div>
+              <p class="font-semibold text-xl">Ankith Kumar</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div> -->
+        <div class=" p-8 shadow-md">
+          <p>“Work at Chargebee has been challenging and equally rewarding in the time I have spent here. I constantly
+            get to be inspired by my talented team and also learn and improve my skills.”</p>
+          <div class="flex pt-4 gap-4 items-center">
+            <div class="w-20 "><img src="https://ca.slack-edge.com/T02TEFLBL-U01KM25VATX-364b39bb1d60-512" class="rounded-full" alt=""></div>
+            <div>
+              <p class="font-semibold text-xl">Ankith Kumar</p>
+              <p>Product Designer</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class=" p-8 shadow-md mb-8">
+          <p>“Chargebee Design gives me the freedom to manage and organize my time. It has made it possible for me as a mom to blend a career with family time. To continue to do the work I deeply connect to and also be there for my son.”</p>
+          <div class="flex pt-4 gap-4 items-center">
+            <div class="w-20 "><img src="https://ca.slack-edge.com/T02TEFLBL-U0169BS7198-8d5f36171d5c-512" class="rounded-full" alt=""></div>
+            <div>
+              <p class="font-semibold text-xl">Sowmya Kidambi</p>
+              <p>Design Manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" p-8 shadow-md mb-8">
+          <p>““At work, I get to use my love for writing and design in new ways every day. I enjoy working with intelligent, self aware peers. What also stands out is the value Chargebee places on our well-being and mental health.”</p>
+          <div class="flex pt-4 gap-4 items-center">
+            <div class="w-20 "><img src="https://ca.slack-edge.com/T02TEFLBL-ULXPGCBBM-bca5c43e3672-512" class="rounded-full" alt=""></div>
+            <div>
+              <p class="font-semibold text-xl">Tara Thomas</p>
+              <p>Content Designer</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-gray-100 pt-16 md:pt-24">
+    <div class="md:w-7/12 w-9/12 md:flex m-auto justify-between items-center ">
+      <div class="md:w-1/3">
+        <h4 class="text-4xl font-semibold pb-4">We embrace your uniqueness.</h4>
+        <h5 class="font-normal text-2xl text-cbGray-300">Even if you don’t tick all the boxes, we would like to see you
+          apply.</h5>
+      </div>
+      <div class="md:flex justify-center gap-6 md:pt-0 pt-6">
+        <div>
+          <button class=" bg-white shadow-md px-12 py-4 text-2xl font-medium rounded w-full md:w-auto transition ease-out duration-700 transform hover:shadow-2xl hover:translate-y-2 ">Join Us</button>
+        </div>
+        <div class="md:pt-0 pt-6">
+          <button class=" bg-cbOrange text-white shadow-md md:px-24 py-4 text-2xl font-medium rounded w-full md:w-auto transition ease-out duration-700 transform hover:shadow-2xl hover:translate-y-2">Get in
+            Touch</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-sm pt-24 pb-8">© 2021 Chargebee.</p>
+  </footer>
+
+  <script>
+
+  </script>
+
+  <script src="./js/app.js"></script>
 </body>
+
 </html>
-
-
-
-
