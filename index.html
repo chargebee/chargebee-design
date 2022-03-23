@@ -58,7 +58,7 @@
 
 <body x-data="designApp()" >
 
-
+  
 <!--mobile-heade-->
 <div class="md:hidden h-auto relative bg-cbDark py-10 overflow-x-hidden sm:overflow-hidden ">
   <div class="absolute left-0  w-[100%] sm:w-[78%] bottom-10 sm:top-0 -right-32 sm:-right-36 ml-auto overflow-hidden ">
@@ -95,7 +95,14 @@
 </div>
 
   <!--head-->
-  <div class="hidden  bg-cbDark lg:bg-cbDark  xl:bg-cbDark sm:hidden  md:flex sm:h-[600px] md:h-[600px] lg:h-full   relative overflow-hidden overflow-x-hidden  ">
+  <!-- <div class=" bg-cbDark lg:bg-cbDark  xl:bg-cbDark"></div> -->
+
+  <!-- <div class="star-field"> -->
+  <!-- <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div> -->
+
+  <div class="hidden bg-cbDark lg:bg-cbDark  xl:bg-cbDark   sm:hidden  md:flex sm:h-[600px] md:h-[600px] lg:h-full   relative overflow-hidden overflow-x-hidden  ">
     
    
     <div class=" flex   md:w-[45vw]  xl:w-[35vw] 2xl:w-[35vw]    relative   items-center justify-end " >
@@ -157,7 +164,7 @@
    
   </div>
 
-
+<!-- </div> -->
 
 
   <!--section 1-->
@@ -523,7 +530,25 @@
 <!--start of communication-->
 <template x-if="commTab">
 <div  >
+  <div class="  bg-gradient-to-r from-[#3E434B] via-[#3E434B] to-[#202328]">
+    <div class="lg:w-8/12 m-auto py-8" >
+      <div class="md:flex text-white gap-x-2 items-center justify-center px-6 md:px-0 ">
+        <p class="text-2xl font-semibold text-white">Chargebee for Developers <p>
+          <p class=" hidden md:block text-2xl font-semibold text-white">| </p>
+          <p class="flex md:items-center gap-x-2">
+            <span class="text-[#CAD0DC] text-lg font-thin">Check out what our Tech-genies do!</span>
+          
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#CAD0DC] text-lg font-thin" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+          </p>
+        
+    
+      </div>
+    </div>
+  </div>
   <div  class="md:pt-24 pt-10 bg-cbDark">
+    
   <!-- <div class="md:flex md:w-8/12 m-auto gap-40 justify-end px-8 md:px-0">
 
     <div class="md:w-7/12  flex justify-start">
@@ -540,6 +565,8 @@
 
 
   <div class="   xl:flex  md:w-8/12 m-auto gap-40 md:px-0 px-8 justify-end md:pt-16 pt-16 md:pb-24 ">
+
+   
 
     <div class="md:w-full lg:w-full xl:w-7/12  md:flex lg:flex  xl:flex justify-start ">
       <div class="md:w-12/12 ">
@@ -583,8 +610,35 @@
   </div>
 </div>
 
+<!-- developers -->
+<section class="bg-gradient-to-r from-[#3F454F] via-[#3F454F] to-[#101113] py-16 relative overflow-hidden lg:overflow-visible " >
+  <div class="md:w-8/12 m-auto px-6 md:px-0  flex justify-between">
+    <div class="space-y-3">
+      <p class="text-3-5xl text-white font-semibold">Chargebee for Developers</p>
+     <div class="w-3/4 space-y-3">
+      <p>Capturing our creations and our moments of inspiration</p>
+      <div class="transition ease-out duration-700 transform hover:shadow-2xl hover:-translate-y-2  sm:w-1/2 md:w-60">
+        <a href="https://chargebee.com/for-developers/2022/" target="_blank" class=" shadow-md px-8 py-4 text-lg text-center justify-center md:text-2xl font-medium rounded  bg-white  transition ease-out duration-700 transform hover:shadow-2xl flex items-center gap-x-3">
+          <span>Get in touch</span>
+          
+        </a>
+     </div>
+        </div>
+    </div>
+
+  
+      <div class="absolute -right-36 md:-right-20 lg:right-0 md:-top-0 lg:-top-28  md:block ">
+        <img src="./assets/images/globe-hero.svg" class="h-64 md:h-[350px] lg:h-[500px]" alt="">
+          
+      </div>
+ 
+
+  </div>
+  <div class="w-full bg-white h-20 absolute -bottom-16 lg:block hidden"></div>
+</section>
+
 <!--approach-->
-  <div class="md:w-8/12 m-auto ">
+  <div class="md:w-8/12 m-auto relative ">
     <div class="xl:flex md:w-12/12 m-auto gap-40 md:px-0 px-8 justify-end md:pt-32 pt-16">
 
       <div class="md:w-full lg:full xl:w-7/12  xl:flex justify-start">
